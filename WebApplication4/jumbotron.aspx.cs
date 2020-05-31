@@ -7,15 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace WebApplication4
 {
-    public partial class login : System.Web.UI.Page
+    public partial class jumbotron : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-        protected void login_submit()
-        {
-            Response.Redirect("WebForm2.aspx");        }
 
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

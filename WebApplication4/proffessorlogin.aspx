@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master1.Master" AutoEventWireup="true" CodeBehind="adminlogin.aspx.cs" Inherits="WebApplication4.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master1.Master" AutoEventWireup="true" CodeBehind="proffessorlogin.aspx.cs" Inherits="WebApplication4.proffessorlogin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
      <!DOCTYPE html>
 
@@ -12,7 +12,7 @@
 <div class="center-container">
 	
 	<div class="header-w3l">
-		<h1>Admin</h1>
+		<h1>Professor</h1>
 	</div>
 
 	<div class="main-content-agile">
@@ -24,7 +24,7 @@
 			       <div class="pom-agile">
                                  
                   
-                       <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control" TextMode="Email" Width="340px" placeholder="Email"></asp:TextBox><br/>
+                       <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control" Width="340px" placeholder="Username"></asp:TextBox><br/>
 				</div>
 				<div class="pom-agile">
 					
@@ -33,9 +33,10 @@
 				<div class="sub-w3l">
 				
 					<div class="right-w3l">
-                        <asp:Button ID="Button1" runat="server" Text="Login" OnClick="Button1_Click" /><i class="glyphicon glyphicon-arrow-right"></i>
+                        <asp:Button ID="Button1" runat="server" Text="Start" OnClick="Button1_Click" />
 					    <br />
                          <br />
+                        <asp:Label ID="Label1" runat="server" Text="Data isn't found" ForeColor="Red" CssClass="form-control" Visible="false"></asp:Label>
                        
 					</div>
 				</div>

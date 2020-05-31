@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master1.Master" AutoEventWireup="true" CodeBehind="login11.aspx.cs" Inherits="WebApplication4.login11" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master1.Master" AutoEventWireup="true" CodeBehind="studentlogin.aspx.cs" Inherits="WebApplication4.studentlogin" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <!DOCTYPE html>
+      <!DOCTYPE html>
 
    
     <link href="css/font-awesome.css" rel="stylesheet" />
@@ -12,19 +12,19 @@
 <div class="center-container">
 	
 	<div class="header-w3l">
-		<h1>Good luck!</h1>
+		<h1>Student</h1>
 	</div>
 
 	<div class="main-content-agile">
 		<div class="sub-main-w3">	
 			<div class="wthree-pro">
-				<h2>Login Quick</h2>
+				
 			</div>
 			<form action="#" method="post" runat="server" >
 			       <div class="pom-agile">
                                  
                   
-                       <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control" TextMode="Email" Width="340px" placeholder="Email"></asp:TextBox><br/>
+                       <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control" Width="340px" placeholder="Username"></asp:TextBox><br/>
 				</div>
 				<div class="pom-agile">
 					
@@ -33,7 +33,12 @@
 				<div class="sub-w3l">
 				
 					<div class="right-w3l">
-                        <asp:Button ID="Button1" runat="server" Text="Start" OnClick="Button1_Click" />
+                        <asp:Button ID="Button1" runat="server" Text="Login
+                            " OnClick="Button2_Click" />
+					    <br />
+                         <br />
+                        <asp:Label ID="Label1" runat="server" Text="Data isn't found" ForeColor="Red" CssClass="form-control" Visible="false"></asp:Label>
+                       
 					</div>
 				</div>
 			</form>
@@ -44,6 +49,4 @@
    
         <div>
         </div>
-  
-
 </asp:Content>

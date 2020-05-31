@@ -30,6 +30,9 @@ namespace WebApplication4
 
                 sqlcmd.ExecuteNonQuery();
                 GridView1.DataBind();
+                Response.Write("<script>alert('Data inserted successfully')</script>");
+                TextBox1.Text = "";
+                TextBox2.Text = "";
             }
         }
 

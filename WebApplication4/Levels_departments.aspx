@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet" />
     <script src="Scripts/jquery-3.3.1.min.js"></script>
     <link href="css/fontawesome.min.css" rel="stylesheet" />
-   
+    <link href="css/all.css" rel="stylesheet" />
    
 <div class="center-container">
 	
@@ -18,10 +18,10 @@
 	<div class="main-content-agile">
 		<div class="sub-main-w3">	
 			
-			<form action="#" method="post" runat="server" >
+			<form id="form1" runat="server">
 			       <div class="pom-agile">
                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                       <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="Black" GridLines="Vertical" Width="333px" Height="116px">
+                       <asp:GridView ID="GridView1" runat="server" CssClass="mGrid" AlternatingRowStyle-CssClass="alt" AutoGenerateColumns="False" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="Black" GridLines="Vertical" Width="333px" Height="116px">
                            <AlternatingRowStyle BackColor="White" />
                            <Columns>
                                <asp:BoundField DataField="level_name" HeaderText="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Level Name" SortExpression="level_name" />
@@ -49,10 +49,13 @@
 				
 				</div>
 				<div class="pom-agile">
+					<asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox1" ErrorMessage="*Enter the level name" ForeColor="Red"></asp:RequiredFieldValidator>
 					<br />
 					 <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control"  Width="340px" placeholder="Level"></asp:TextBox>
 				</div>
                 <div class="pom-agile">
+				
+					<asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBox2" ErrorMessage="*Enter the department" ForeColor="Red"></asp:RequiredFieldValidator>
 				
 					<br />
 					 <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control"  Width="340px" placeholder="Department"></asp:TextBox>

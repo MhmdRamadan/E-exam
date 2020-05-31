@@ -3,7 +3,7 @@
     <link href="css/style.css" rel="stylesheet" />
     <script src="Scripts/jquery-3.3.1.min.js"></script>
     <link href="css/fontawesome.min.css" rel="stylesheet" />
-   
+    <link href="css/all.css" rel="stylesheet" />
    
 <div class="center-container">
 	
@@ -16,7 +16,7 @@
 	
 			<form action="#" method="post" runat="server" >
 			       <div class="pom-agile">      
-                       <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="Black" GridLines="Vertical" Width="349px">
+                       <asp:GridView ID="GridView1" runat="server" CssClass="mGrid" AlternatingRowStyle-CssClass="alt" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="Black" GridLines="Vertical" Width="349px">
                            <AlternatingRowStyle BackColor="White" />
                            <FooterStyle BackColor="#CCCC99" />
                            <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />

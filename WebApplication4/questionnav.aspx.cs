@@ -7,17 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace WebApplication4
 {
-    public partial class adminNavigation : System.Web.UI.Page
+    public partial class questionnav : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            Session["state"] = "unsigned";
-            Response.Redirect("adminlogin");
         }
     }
 }
